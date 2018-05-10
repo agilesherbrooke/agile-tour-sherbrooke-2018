@@ -2,160 +2,396 @@ import { Room, Time  } from '../consts';
 import { Conference } from '../models';
 
 export const ConferenceKeynote: Conference = {
+  enable: true,
   time: Time.timeKeynote,
   room: Room.room1,
-  title: `Agility and Architecture`,
-  resume: `Do agile methods abandon architecture for speed? Do they replace good design decisions with mindless testing? Are agile methods just another way to hack-and-slash systems together without the appropriate discipline, due-diligence, and documentation? In this Keynote Robert C. Martin describes how the principles of Agile Software Development lead to rich and robust architectures, high degrees of discipline, due consideration of design and architecture, and all appropriate levels of documentation.`,
-  company: `Keynote`,
+  title: `Omnimed, une entreprise inspirante de la région de l’Estrie.`,
+  resume: `
+    Pour cette seconde édition, nous avons le plaisir d'accueillir Xavier Boilard, 
+    président-directeur général de l’entreprise Omnimed, une entreprise inspirante de la 
+    région de l’Estrie.<br><br>
+    Fondée par le Dr Jean Boilard en 1984, la compagnie se nomme alors Caduceus et est 
+    spécialisée dans le développement et la commercialisation d’outils de gestion pour les 
+    cliniques médicales. <br><br>
+    Convaincu que le besoin en outils de gestion est beaucoup plus grand que ce qu’offre Caduceus, 
+    il fonde alors Omnimed, en 1998. <br><br> 
+    « Mon père disait que lorsqu'il avait commencé à pratiquer, la médecine était une science, 
+    et que c'était devenu un art; celui de deviner ce que tu ne sais pas, car le patient ne 
+    donne jamais toute l'information et le médecin a très rarement accès à toutes ses 
+    consultations précédentes. À la fin de la journée, il était hanté par le doute, l'idée 
+    qu'il avait pu se tromper et faire la mauvaise déduction. C'est pour réduire ce doute 
+    qu'il a imaginé un dossier électronique partagé. » - Xavier Boilard, PDG d'Omnimed et 
+    fils de Dr Boilard <br><br>
+    Depuis ses débuts, l’entreprise est l’une des pionnières sur le marché émergent de 
+    l’informatique médicale au Québec et est devenue au fil des années leader en matière 
+    de développement logiciel.<br><br>
+  `,
+  company: `Omnimed`,
   presenters: [
     {
-      name: `Uncle Bob Martin`,
-      picture: `assets/uncle-bob.png`,
-      bio: `<b>Robert C. Martin</b>, aka "Uncle Bob," has been a software professional since 1970 and an international software consultant since 1990. In the last 40 years, he has worked in various capacities on literally hundreds of software projects. In 2001, he initiated the meeting of the group that created Agile Software Development from Extreme Programming techniques and served as the first chairman of the Agile Alliance.  He is also a leading member of the Worldwide Software Craftsmanship Movement - Clean Code.<br>
-            <br>
-            He has authored "landmark" books on Agile Programming, Extreme Programming, UML, Object-Oriented Programming,  C++ Programming and most recently Clean Code and Clean Coder. He has published dozens of articles in various trade journals.<br>
-            He has written, directed and produced numerous "Code Casts" videos for software professionals.<br>
-            Bob is a regular speaker at international conferences and trade shows.<br>
-            Mr. Martin is the founder, CEO, and president of Uncle Bob Consulting, LLC and Object Mentor Incorporated.<br>
-            <br>
-            Uncle Bob has published dozens of articles in various trade journals, and is a regular speaker at international conferences and trade shows.​​`,
+      name: `Xavier Boilard`,
+      picture: `assets/speakers/xavier-boilard.png`,
+      bio: `<br>`,
     },
   ],
 };
 
 export const ConferenceAm1: Conference[] = [
   {
+    enable: true,
     time: Time.timeAM1,
     room: Room.room1,
-    title: `Top 5 des meilleures façons d'améliorer votre code`,
-    resume: `Écrire une fois, lire souvent (Write once, read many). Arrêter de redécouvrir ce que vous aviez déjà imaginé. Dans cette présentation, nous allons vois 5 façons efficaces et peu coûteuses d’améliorer votre code. Vous devriez vous attarder à rendre votre code plus facile à lire pour éviter que les prochains ne perdent leur temps à le comprendre. Vous sortirez de cette session avec des conseils utiles pour accomplir cette tâche.`,
+    title: `Faciliter le passage d'une organisation réactive à créative`,
+    resume: `
+      Les organisations d'aujourd'hui sont des entités qui doivent désormais composer 
+      avec une complexité sans cesse grandissante. Les enjeux multiculturels, multi-générationnels, 
+      les besoins changeants, la technologie, sont tous de plus en plus complexes. Les structures 
+      organisationnelles en place peinent à maintenir le cap et l'adaptation est difficile, 
+      ce qui cause des délais, de la frustration et du stress.<br><br>
+
+      Il y a un besoin de naviguer collectivement à travers cette complexité en tant qu'organisation 
+      afin de répondre au besoin d'adaptation rapide. Les entreprises d'aujourd'hui cherchent à créer 
+      une expérience plus riche, autant pour leurs clients que leurs employés. La communication, les 
+      relations et les échanges deviennent alors encore plus importants, mais sont aussi plus complexes.<br>
+      - Comment faciliter la communication entre les différents secteurs de l'organisation?<br>
+      - Comment engager les gens sur une base quotidienne quant à une intention globale?<br>
+      - Comment connecter les gens entre eux pour créer un mouvement cohérent?<br>
+      - Comment éviter les mauvaises interprétations?<br><br>
+      
+      Pour faire tout cela, il faut développer des compétences qui sont aujourd&#39;hui majoritairement 
+      déficientes dans la plupart des entreprises :<br><br>
+
+      - Prise de perspective inter unité/département<<br>
+      - Initier et entretenir des conversations de qualité<br>
+      - Présence complète<br>
+      - Connaissance du fonctionnement humain<br>
+      - Intelligence émotionnelle<br>
+      - Poser les bonnes questions<br><br>
+      
+      Que ce soit entre deux personnes, une équipe de travail, un département, un secteur ou 
+      l'entreprise tout entière, la facilitation organisationnelle dynamise les échanges à tous 
+      ces niveaux et aide à dissoudre les silos qui freinent l'évolution d'une organisation. La 
+      conférence se veut une exploration de ce sujet ainsi qu'une expérience directe de la facilitation 
+      pour comprendre l'effet sur un groupe et les répercussions sur l’organisation.
+    `,
     company: `Pyxis`,
     presenters: [
       {
-        name: `Éric De Carufel`,
-        picture: `assets/eric-de-carufel.png`,
-        bio: `Passionné, impliqué et minutieux sont des qualités qui décrivent bien Éric pour qui le développement logiciel est une quête constante d'amélioration pour atteindre l'équilibre entre la perfection et les besoins du client. Éric travaille pour Studio Pyxis depuis 2010. Son approche architecturale est simple : élaborer une architecture où il est plus facile d'appliquer les bonnes pratiques que les mauvaises. Son implication en tant que conférencier et blogueur est reconnue par Microsoft, qui lui a décerné le prix de 'Most Valuable Professional in Visual C#' (MVP C#) ces huit dernières années.`,
+        name: `Dave Jacques`,
+        picture: `assets/speakers/dave-jacques.png`,
+        bio: `
+          Facilitateur organisationnel et coach Agile, Dave Jacques aide les groupes et les individus 
+          à développer leur plein potentiel en leur offrant un environnement créatif pour comprendre et 
+          grandir. Il est passionné par les dynamiques d’équipe, le développement humain et l’utilisation 
+          de l’ensemble du corps dans la recherche d’une communication de qualité.
+        `,
+      },
+      {
+        name: `Gilles Duchesne`,
+        picture: `assets/speakers/gilles-duchesne.png`,
+        bio: `
+          Passionné par l’humain, l’innovation et les idées émergentes, Gilles se spécialise à créer 
+          et entretenir du mouvement et de l’alignement dans les organisations en misant avant tout sur 
+          une durabilité humaine. Il agit en tant que facilitateur organisationnel et coach Agile avec 
+          Pyxis Technologie depuis 8 ans et oeuvre entre autres auprès des grandes organisations 
+          gouvernementales, financières et du domaine des assurances à Québec
+        `,
       },
     ],
   },
   {
+    enable: true,
     time: Time.timeAM1,
     room: Room.room2,
-    title: `Le Management 3.0 et le Lean : les clés d'une transformation réussie`,
-    resume: `Le Management 3.0 est un courant d’innovation et de leadership qui affirme que le management est une responsabilité collective. Les outils du Management 3.0 et du Lean nous permettent un virage efficace vers de nouvelles façons de faire.`,
-    company: `Levio`,
-    presenters: [
-      {
-        name: `Nathalie Ferron`,
-        picture: `assets/nathalie-ferron.png`,
-        bio: `Coach agile et stratège en transformation organisationnelle. Experte en méthodologie de développement et en gestion du changement. Soutien la transformation des gestionnaires vers le Management 3.0`,
-      },
-      {
-        name: `Magali Doucet`,
-        picture: `assets/magali-doucet.png`,
-        bio: `Maître en management public spécialisée en amélioration des processus dans les organisations publiques.`,
-      }
-    ],
-  },
-  {
-    time: Time.timeAM1,
-    room: Room.room3,
-    title: `"Scaling Agile" dans un contexte manufacturier`,
-    resume: `Depuis plusieurs années, le département des technologies de l'information chez IBM Bromont a expérimenté différentes approches agiles. Par contre, pour maximiser la création de valeur pour l’organisation, il a fallu d'influencer les autres départements de l'entreprise afin d'avoir une approche d'agilité plus globale.<br><br>Cette conférence se veut un retour d'expérience sur la démarche d’'intégration des valeurs agiles dans la gestion des projets chez IBM Bromont. Elle portera essentiellement sur l'évolution des différents bureaux de projets de l'usine, ainsi que l'intégration entre la gestion de projet traditionnelle et agile. La conférence sera un mélange de « lessons learned », des défis actuels et la vision pour la suite des choses.`,
+    title: `Perspective d'IBM Bromont sur le rôle des gestionnaires de première ligne en mode Lean/Agile`,
+    resume: `
+      Le rôle de gestionnaire de première ligne lors d'une transformation agile d'une organisation 
+      n'est pas toujours très clair. Bien qu'il existe un peu de littérature sur le sujet, le focus 
+      est surtout mis sur le concept d'équipe autogéré. Quel est donc le rôle d'un gestionnaire 
+      pendant et après une transformation Agile?<br><br>
+      Une équipe de gestionnaire de différentes fonctions de l'entreprise s'est penchée sur cette 
+      question afin de définir ce rôle. L'objectif de la conférence est de présenter cette réflexion 
+      et les applications pratiques que nous vivons en lien avec cela chez IBM Bromont.
+    `,
     company: `IBM`,
     presenters: [
       {
         name: `Benoit Lapointe`,
-        picture: `assets/benoit-lapointe.png`,
-        bio: `Benoit Lapointe est à l'emploi d'IBM Bromont depuis 2001. Depuis près de 10 ans, il a expérimenté plusieurs approches : Rational Unified Process, Lean Software Developpement (Kanban), eXtreme Programming, Scrum et Scaled Agile Framework.<br><br>Il est IBM Systems Agile Champion pour l'usine de Bromont ce qui fait de lui un acteur important à la mise en place de l'approche Agile/Scrum pour l'ensemble de l'usine. Dans le cadre de sa maîtrise en administration des affaires (MBA), Benoit s'est intéressé à l'intégration des valeurs et principes agiles dans la gestion de projet non relié aux technologies de l'information. En plus d'accompagner une équipe de recherche et développement dans son parcours vers l'agilité, il est impliqué au niveau des différents bureaux de projets de l'usine de Bromont pour faire de l'accompagnement.<br><br>Finalement, Benoit est chargé de cours pour l’école de gestion de l’université de Sherbrooke. Il enseigne le cours de gestion des opérations pour les étudiants à la maitrise en administration des affaires (MBA).`,
+        picture: `assets/speakers/benoit-lapointe.png`,
+        bio: `
+          Benoit Lapointe est à l'emploi d'IBM Bromont depuis 2001. Depuis près de 10 ans, 
+          il a expérimenté plusieurs approches : Rational Unified Process, Lean Software Developpement 
+          (Kanban), eXtreme Programming, Scrum et Scaled Agile Framework.<br><br>Il est IBM Systems 
+          Agile Champion pour l'usine de Bromont ce qui fait de lui un acteur important à la mise 
+          en place de l'approche Agile/Scrum pour l'ensemble de l'usine. Dans le cadre de sa maîtrise 
+          en administration des affaires (MBA), Benoit s'est intéressé à l'intégration des valeurs 
+          et principes agiles dans la gestion de projet non relié aux technologies de l'information. 
+          En plus d'accompagner une équipe de recherche et développement dans son parcours vers 
+          l'agilité, il est impliqué au niveau des différents bureaux de projets de l'usine de Bromont 
+          pour faire de l'accompagnement.<br><br>Finalement, Benoit est chargé de cours pour l’école 
+          de gestion de l’université de Sherbrooke. Il enseigne le cours de gestion des opérations 
+          pour les étudiants à la maitrise en administration des affaires (MBA).
+        `,
       }
     ],
   },
   {
+    enable: true,
     time: Time.timeAM1,
-    room: Room.room4,
-    title: `Faire Agile vs être Agile`,
-    resume: `L'agilité dans l'approche et l'agilité comme état d'esprit, deux choses n'allant pas sans l'autre mais qui se retrouvent trop souvent séparées, ce qui heurte à la longue la réputation de cette approche.`,
-    company: `FX Innovation`,
+    room: Room.room3,
+    title: `DDD et programmation fonctionnelle : des alliés naturels`,
+    resume: `
+      La popularité du DDD est à la hausse dans les dernières années avec la montée des 
+      micro-services et dans un contexte d’architecture évolutive “Agile”.<br><br>
+
+      Lorsqu’on pense au sujet du Domain-Driven Design, on pense naturellement à une 
+      implémentation dans un langage orienté objet. Mais, peut-on imaginer des Bounded 
+      Contexts et des Shared Kernels lorsque nous utilisons un paradigme axé sur les 
+      fonctions? C’est ce que vous apprendrez dans cette présentation.<br><br>
+    
+      En utilisant des requis réalistes, nous modéliserons un domaine d’affaires avec le 
+      langage F#. Tout en bâtissant du code sous la forme d’une documentation exécutable, 
+      nous travaillerons à éliminer le plus d’effets de bord possibles en rendant les états 
+      illégaux non-représentables.<br><br>
+    
+      Aucune connaissance de F# n’est nécessaire pour apprécier la présentation. Il s’agit 
+      d’une introduction.<br><br>
+      <strong>Public cible</strong>: Développeurs.
+    `,
+    company: `Elapse`,
     presenters: [
       {
-        name: `Olivier Fortier`,
-        picture: `assets/olivier-fortin.png`,
-        bio: `Scrum Master Professionnel bilingue orienté vers les gens et leader engagé, cumulant 4 ans d’expérience en gestion d’équipe dans un environnement Agile et Scrum, et 13 ans d’expérience dans la création et la maintenance de sites Web.`,
+        name: `Olivier Lafleur`,
+        picture: `assets/speakers/olivier-lafleur.png`,
+        bio: `
+          Curieux de nature et aimant explorer de nouvelles technologies, Olivier aime aider les gens 
+          à avoir plus de plaisir à développer du logiciel de qualité. Il agit chez Elapse en tant 
+          que mentor technique et il aide à mettre en place de nouveaux processus qui visent à améliorer 
+          le professionnalisme des programmeurs. Olivier est aussi enseignant au Cégep, où il adore 
+          transmettre sa passion des bonnes pratiques et du clean code.
+        `,
+      },
+    ],
+  },
+  {
+    enable: true,
+    time: Time.timeAM1,
+    room: Room.room4,
+    title: `Kanban: livrer plus vite sans noyer vos équipes`,
+    resume: `
+      Lors de cet atelier, vous serez en compétition avec plusieurs équipes Kanban et devrai 
+      livrer un maximum de valeur à l'aide de votre système Kanban. Avec un animateur à la 
+      facilitation, un coach expert Kanban pour chacune des équipes et un environnement de 
+      simulation original, vous aurez tout en main pour comprendre et approfondir les principes 
+      et les pratiques Kanban.<br><br>
+
+      Vous devrez travailler en équipe afin de faire les bons choix dans l'objectif de maximiser 
+      la valeur livrée à vos clients.<br><br>
+      
+      Alors, serez-vous les champions du débit de valeur?
+    `,
+    company: `Facilité`,
+    presenters: [
+      {
+        name: `Éric Lessard`,
+        picture: `assets/speakers/eric-lessard.png`,
+        bio: `
+          Éric Lessard est un coach et praticien agile depuis plus de 10 ans. Il a occupé un éventail 
+          de rôles différents dans les équipes agiles comme développeur, analyste, chef d’équipe, 
+          coordonnateur et coach. Il préconise une approche pragmatique et concrète à l’agilité, 
+          visant la livraison de résultats par des équipes humaines et engagées.
+        `,
       },
       {
-        name: `Éric Chailler`,
-        picture: `assets/eric-chailler.png`,
-        bio: `Gestionnaire et technologue d'expérience, il a géré des équipes opérationnelles, spécialistes en infrastructure et équipes de développements en mode agile depuis les dernières 10 années. Reconnu pour son leadership, sa compréhension des technologies et son ouverture à faire avancer les choses et défier le statu quo.`,
-      }
+        name: `Alex Bergeron`,
+        picture: `assets/speakers/alex-bergeron.png`,
+        bio: `
+          Formé en gestion de systèmes Kanban, Alex est un passionné de réalisation qui est devenu, au 
+          travers de ses rôles de leadership, obsédé par la livraison de valeur en développement logiciel. 
+          Il est maintenant un vrai geek de l’agilité et de la pensée systémique qui prend plaisir, de par 
+          sa carrière en coaching, à partager ses connaissances et voir naître de fortes cultures d’ingénierie.
+        `,
+      },
     ],
   },
 ];
 
 export const ConferencePm1: Conference[] = [
   {
+    enable: true,
     time: Time.timePM1,
     room: Room.room1,
-    title: `En route vers l'optimisation! Votre succès avec Kanban étape par étape`,
-    resume: `Comment contrôler son flux de travail quand les demandes arrivent à tout moment et sont toutes urgentes ? Comment être prévisible envers nos clients afin de réduire la pression et augmenter notre crédibilité ?<br><br>La méthode Kanban, bien implantée et maîtrisée, vous permettra de rendre ces problèmes visibles de tous et d'identifier les solutions adéquates.<br><br>Pour réussir dans votre transformation Kanban et en retirer tous les bénéfices, nous vous proposons une démarche en 3 grands jalons:<br><br>INTRODUIRE - "Révéler le système"<br>L'objectif de ce jalon est de rendre visible le système d'alimentation d'une équipe, l'état de l'ensemble du travail en cours et les règles et processus internes afin de poser un diagnostic et les bases solides pour trouver les remèdes aux douleurs révélées.<br><br>STABILISER - "Stabiliser le système"<br>L'objectif de ce jalon est d'amener l'équipe à opérer les changements nécessaires pour qu'elle puisse devenir prédictible, tant au niveau de sa capacité que sur le débit de travail qu'elle est en mesure de livrer à sa clientèle. En stabilisant les facteurs générant de la variabilité, l'équipe pourra fournir des ententes de service fiables à ses clients.<br><br>PROPULSER - "Propulser l'équipe"<br>L'objectif de ce jalon est d'outiller l'équipe pour qu'elle soit en mesure d'optimiser son travail, ses processus et ses règles. Dans ce jalon, les conditions sont réunies afin de maximiser l'utilisation des métriques et des techniques de prédictibilité avancées.<br><br>Tout au long de cette démarche, l'accent est mis sur la gestion du changement auprès des principaux acteurs impactés: l'équipe, le gestionnaire, le client ainsi que les parties prenantes.`,
+    title: `Lean Café: Jasons peu, mais jasons bien!`,
+    resume: `
+      Le comité Agile Tour Sherbrooke vous invite à une session Lean Café à propos de vos questions 
+      et vos défis concernant l’agilité. 
+      Le Lean Café est un atelier pour parler brièvement et de manière pertinente d’un ou plusieurs 
+      sujets. On commence par une discussion de 7 minutes. Au terme de la période, le groupe décide 
+      si la discussion mérite de continuer ou pas, par un vote à main levée. Si le groupe vote pour 
+      une prolongation, on poursuit la discussion en réduisant la période à 5 minutes. Et l’on 
+      continue selon l’envie et l’énergie du groupe. 
+      <br><br>Pour en savoir plus, consulter le 
+      site 
+      <a href="http://agilecoffee.com/leancoffee/" target="_blank">http://agilecoffee.com/leancoffee/</a>.<br><br>
+      Mathieu Boisvert, membre du comité organisateur, sera le facilitateur de la rencontre.<br><br>
+      <strong>Apportez vos sujets! Mettez votre expertise à contribution!</strong>
+    `,
+    company: `Agile Sherbrooke`,
+    presenters: [
+      {
+        name: `Mathieu Boisvert`,
+        picture: `assets/speakers/mathieu-boisvert.png`,
+        bio: `
+          Expert en Agilité depuis maintenant 2004, Mathieu est un acteur important dans l’établissement 
+          de la stratégie d’adoption des approches agiles pour de nombreuses équipes et entreprises.<br><br>
+
+          Mathieu est également, un chargé de cours à la Chaire de gestion de projet de l’UQAM et au 
+          Centre de formation continue de la Faculté de génie de l’Université de Sherbrooke, 
+          un formateur reconnu par Scrum.org, un conférencier actif dans la communauté agile 
+          et le coauteur, avec Sylvie Trudel, du livre « Choisir l’Agilité : du développement 
+          logiciel à la gouvernance », paru dans la collection InfoPro chez DUNOD.
+        `,
+      },
+    ],
+  },
+  {
+    enable: true,
+    time: Time.timePM1,
+    room: Room.room2,
+    title: `Quand les contributeurs tardent à contribuer: les silos organisationnels qui freinent souvent la vélocité des équipes.`,
+    resume: `
+      John F Kennedy a dit, en 1961 "My fellow Americans, ask not what your country can do for 
+      you, ask what you can do for your country". On pourrait adapter cette phrase pour plusieurs 
+      équipes en soutien à des projets de solutions d'affaires ... "Oh toi projet, qui a besoin 
+      de mon soutien pour accomplir ta mission, comment puis-je t'aider efficacement ?". La 
+      réalité est tout autre, malheureusement... Les équipes de support - qu'elles soient 
+      technologiques, légales, communicationnelles - sont souvent organisées en silo hiérarchiques 
+      et sont régies par leurs propres règles et contraintes. L'appel à ces équipes devient 
+      souvent - pour les équipes agiles - un parcours du combattant avec une multitude de 
+      petites batailles. Nous explorerons, au cours de cette conférence, l'état de lieux et 
+      les pistes de réflexions et d'améliorations qui pourraient aider ces équipes essentielles 
+      à soutenir efficacement les projets agiles.Un peu de Lean, un grain de Management 3.0, 
+      un soupçon de gestion matricielle ... les solutions possibles sont probablement un amalgame 
+      d'outils et de techniques. Venez explorer avec nous !
+    `,
+    company: `Levio`,
+    presenters: [
+      {
+        name: `Nathalie Ferron`,
+        picture: `assets/speakers/nathalie-ferron.png`,
+        bio: `
+          Nathalie Ferron possède plus de trente années d’expérience dans le domaine des 
+          technologies de l’information. Depuis les dix dernières années, celle-ci est 
+          principalement intervenue dans des mandats nécessitant de créer des opportunités 
+          d’innovation et de changements organisationnels afin à mettre en place des gains 
+          de productivité, des diminutions de budget tout en gardant la qualité et la 
+          satisfaction des milieux d’affaires. Nathalie navigue aisément dans différents 
+          concepts de transformation et de bonnes pratiques principalement avec des approches 
+          agile et lean.<br><br>
+
+          Elle a eu la chance de participer activement à la mise en place de contextes agiles 
+          dans le cadre de grandes transformations organisationnelles. Elle accompagne également 
+          les équipes projet afin de les aider à faire un virage plus axé sur le produit, la 
+          solution d'affaires.<br><br>
+        
+          Reconnue par ses pairs comme une excellente communicatrice, elle anime régulièrement 
+          des ateliers de facilitations et donne de la formation et des conférences sur son 
+          sujet préféré : l'agilité sous toutes ses formes, une agilité agnostique qui reconnait 
+          qu'aucun modèle n'est LA recette, et que le "quoi" et le "comment" doivent d'abord être 
+          déterminés en fonction du client, de son contexte et d'une vision stratégique plus 
+          grande que la simple initiative.<br><br>
+        `,
+      },
+    ],
+  },
+  {
+    enable: true,
+    time: Time.timePM1,
+    room: Room.room3,
+    title: `Fatigué(e)s de mijoter les mêmes recettes ? Portez l’esprit d’innovation à ébullition !`,
+    resume: `
+      A toute époque, des défis impossibles aux yeux de tous ont été relevés par des équipes emmenées 
+      par des individus « ordinaires » considérés depuis comme des visionnaires.<br><br>
+
+      - Comment dépasser nos limites pour croire en nos rêves?<br>
+      - Comment chacun de nous peut partager sa vision d'un meilleur à venir, d'un improbable possible?<br>
+      - Comment amener nos collaborateurs à sortir des sentiers battus et réveiller en eux la flamme de 
+      l’innovation?<br><br>
+      
+      Déroulement de la séance<br>
+      En se prêtant à un jeu de rôles (nous sommes George Lucas rêvant d'aventures spatiales en 1973), 
+      nous échangerons sur les limites à dépasser pour rendre le rêve possible et les moyens pour libérer 
+      l'innovation avec ceux que nous aurons convaincu de suivre. Cet exercice fera apparaître une démarche 
+      originale que le conférencier démontrera en réalisant un rêve personnel devant les participants.<br><br>
+      
+      Audience ciblée<br>
+      Tout le monde. Les participants qui retireront le plus de cette conférence sont ceux qui entreront 
+      avec l'envie sincère d'inspirer leur entourage à sortir des sentiers battus.<br>
+    `,
     company: `Facilité`,
     presenters: [
       {
-        name: `Valéry Germain`,
-        picture: `assets/valery-germain.png`,
-        bio: `Conseiller en informatique depuis vingt ans, baignant avec bonheur dans l’agilité depuis 2010, j’ai découvert l’agilité dans un projet Scrum et n’ai jamais regardé en arrière depuis. J’interviens depuis comme Scrum Master,  coach agile et formateur. Depuis deux ans, je mets ma passion, mes connaissances, ma créativité et mon savoir-être au service de la transformation agile d’un grand organisme public. Mon implication dans le Centre d’Excellence Agile de Facilité me permet de nourrir mon insatiable envie de faire rayonner l’agilité.`,
-      },
-      {
-        name: `Nicolas Mercier`,
-        picture: `assets/nicolas-mercier.png`,
-        bio: `Je suis un passionné d’agilité et c’est une passion contagieuse! Des gens qui communiquent efficacement entre eux et qui s’organisent pour livrer des produits avec une haute valeur d’affaires pour leurs clients, c’est ce qui me motive au plus haut point. J’ai découvert Scrum quelque part en 2007. Depuis, j’ai évolué dans des équipes d’abord comme développeur puis comme Scrum Master et maintenant, je me consacre à temps plein au rôle de coach Agile au sein du centre d'excellence Agile de Facilité. Je déploie donc toute mon énergie à transmettre ma passion pour l’agilité. Ayant évolué au sein d’organisations variées, je travaille avec celles-ci dans leur cheminement vers l’Agilité. Curieux, pragmatique et efficace, je m’efforce de bien saisir les défis des organisations en fonction de leur contexte et de leurs contraintes spécifiques et de les asseoir dans le siège du conducteur.`,
+        name: `Valery Germain`,
+        picture: `assets/speakers/valery-germain.png`,
+        bio: `
+          Conseiller en informatique depuis vingt ans, baignant avec bonheur dans l’agilité depuis 2010, 
+          j’ai découvert l’agilité dans un projet Scrum et n’ai jamais regardé en arrière depuis. 
+          J’interviens depuis comme Scrum Master, coach agile et formateur. Depuis deux ans, je mets 
+          ma passion, mes connaissances, ma créativité et mon savoir-être au service de la transformation 
+          agile d’un grand organisme public. Mon implication dans le Centre d’Excellence Agile de Facilité 
+          me permet de nourrir mon insatiable envie de faire rayonner l’agilité.
+        `,
       },
     ],
   },
   {
+    enable: true,
     time: Time.timePM1,
-    room: Room.room2,
-    title: `La valeur: édition du développeur`,
-    resume: `Nous cherchons de plus en plus à mesurer notre travail en fonction d'une valeur livrée à chaque itération. En tant qu'équipe de développement, quelle est cette valeur et pourquoi est-elle si importante? Cette conférence discute de la relation entre ce concept de valeur et le travail d'une équipe de développement.`,
+    room: Room.room4,
+    title: `Atelier de User Story Mapping`,
+    resume: `
+      Le User Story Mapping est une activité collaborative très simple. On explore les besoins d'un usager 
+      alors qu'il utilise notre produit et on construit un modèle visuel de ces besoins.  L'activité 
+      rend explicite la direction du produit sous la perspective de l'usager et facilite la planification 
+      des mises en productions.<br><br>
+      L'atelier suggéré permet aux participants de vivre pleinement l'expérience afin qu'ils puissent la 
+      reproduire dans leur environnement. Il s'adresse autant aux développeurs, aux propriétaires de produits, 
+      qu'aux Scrum masters.<br><br>
+      But: Donner aux participants les outils et les connaissances afin qu'ils puissent incorporer le User 
+      Story Mapping dans leur travail.
+    `,
     company: `Pyxis`,
     presenters: [
       {
+        name: `Christian Bélisle`,
+        picture: `assets/speakers/christian-belisle.png`,
+        bio: `
+          Dans le domaine du développement logiciel depuis 2000, Christian s’est toujours démarqué 
+          comme quelqu’un qui apprend rapidement et qui reste toujours à l’affût des nouveautés 
+          technologiques. Grâce à son expérience, il est en mesure de s’adapter facilement aux 
+          différents défis qui s’offrent à lui. C’est en 2006 qu’il a eu la chance de suivre un cours 
+          de formation sur Scrum avec Pyxis Technologies et ce fut le début d’une longue relation 
+          avec l’Agilité. Depuis ce temps, il porte une attention constante à la recherche de méthodes 
+          de travail optimales, qu’elles soient de nature technologique ou organisationnelle. 
+          Lorsque les bases du projet sont établies, il sait s’investir corps et âme dans la livraison 
+          de produits exceptionnels. Ayant joint l’équipe Pyxis en 2016, Christian souhaite de tout 
+          son cœur pouvoir améliorer le monde, une itération à la fois
+        `,
+      },
+      {
         name: `Luc St-Laurent`,
-        picture: `assets/luc-st-laurent.png`,
-        bio: `Luc est un professionnel certifié Scrum (CSP) et un coach Agile chez Pyxis. Il a commencé son trajet dans les technologies il y a plus de 20 ans, bien avant d’adopter les valeurs Agiles en 2007 comme Product Owner. Il se dévoue maintenant à aider les équipes et les gestionnaires à mieux collaborer afin de livrer un meilleur produit entre les mains de l’utilisateur.`,
-      },
-    ],
-  },
-  {
-    time: Time.timePM1,
-    room: Room.room3,
-    title: `Gérer l'inconnu avec peu de moyens par le développement itératif - L'Agilité chez PMCtire.com`,
-    resume: `Nous naviguerons à travers la petite histoire de notre pratique Agile chez PMCtire.com , et comment nous sommes arrivés à passer d’une mise en production à tous les 6 mois à livrer de la valeur aux clients plusieurs fois par semaine. Nous aborderons notre pratique à travers différents axes: l’équipe, la gestion de projet, le code et les tests, l’infrastructure, etc.<br><br>Venez entendre comment nos principes itératifs, l’intégration continue et le déploiement continus nous ont permis d’accélérer et de mieux contrôler nos mises en production. Nous expliquerons comment Gitlab (un outil Open Source) nous aide à supporter notre pratique. À travers notre retour d’expérience, nous poserons un regard pragmatique et critique sur les pratiques Agile et Scrum. Intéressant peu importe l’outil que vous utilisez!`,
-    company: `PMCtire`,
-    presenters: [
-      {
-        name: `Benoit St-André`,
-        picture: `assets/benoit-st-andre.png`,
-        bio: `Benoit est Vice-président Technologies chez PMCtire.com. Durant les 20 dernières années, Benoit a contribué à la vision technologique et l’implémentation de technologies Web à titre de gestionnaire de développement, de conseiller technologique et de consultant pour plusieurs organisations du monde de l’entreprise, du gouvernement et de l’éducation, particulièrement en lien avec les logiciels libres et Open Source. Il oeuvrait précédemment à titre d’intrapreneur à l’innovation au sein de Wolters Kluwer Canada où il dirigeait une équipe de développement de produits innovants et a contribué à l’amélioration des processus agile pour les équipes de développement.`,
-      },
-      {
-        name: `Frédéric Gauthier-Boutin`,
-        picture: `assets/frederic-gauthier-boutin.png`,
-        bio: `Frédéric est développeur full stack chez PMCtire.com. Mieux connu sous son pseudonyme de “Nostrada-Fred” par son habileté à connaître l’avenir, il apporte son intérêt à rendre les processus efficaces... tout en faisant ce qu’il aime le plus: coder. Il développe des applications en entreprise depuis 2007 tour à tour chez IBM à Bromont, le Ministère des Transports du Québec et Wolters Kluwer.`,
-      }
-    ],
-  },
-  {
-    time: Time.timePM1,
-    room: Room.room4,
-    title: `CGI Sherbrooke: transformation agile en cours`,
-    resume: `CGI est présent à Sherbrooke depuis 2008. Aujourd'hui, on y compte plus de 200 consultants et un vaste portefeuille d'expertises : banque, commerce en ligne, transports, industries, télécommunications...<br><br>La compagnie est présentement engagée dans une transformation agile. Ce qui se traduit localement par diverses initiatives : développements itératifs, projets scrum/kanban, stand-up meetings, post-its, story mapping, TDD, pratiques Lego® Serious Play®, communautés de pratique, lunch & learn, supports de formation, coaching, etc. Le développement des pratiques agiles est un élément clé dans la croissance de l’entreprise.<br><br>Cette présentation est l'occasion de partager ce qui est mis en œuvre dans le centre de livraison CGI Sherbrooke.`,
-    company: `CGI`,
-    presenters: [
-      {
-        name: `Sedera Randria`,
-        picture: `assets/sedera-randria.png`,
-        bio: `Sedera a développé son expertise en Europe (banques/assurances, véhicules électriques, télécommunications, distribution, commerce électronique, gestion documentaire) avant de se plaire au Québec. Aujourd’hui il anime plusieurs communautés de pratique à CGI Sherbrooke : le groupe Synergie des chargés de projet, les rencontres des analystes d’affaire, ainsi qu’un lunch & learn agile hebdomadaire. Avec sa boîte à outils et ses Legos, il partage sa passion pour l’efficacité agile à travers ses différents mandats de conseil. Il intervient également en tant que coach auprès d’équipes principalement à Sherbrooke, Montréal et au Saguenay.`,
+        picture: `assets/speakers/luc-stlaurent.png`,
+        bio: `
+          Luc est un professionnel certifié Scrum (CSP) et un coach Agile à Pyxis. Il a 
+          commencé son parcours dans les technologies il y a plus de 20 ans, bien avant 
+          d’adopter les valeurs Agiles en 2007 comme Product Owner. Facilitateur et coach, 
+          il se dévoue maintenant à aider les équipes et leurs gestionnaires à mieux collaborer 
+          afin de livrer un meilleur produit entre les mains de l’utilisateur.<br><br>
+
+          En tant que conférencier, Luc a offert des conférences et des ateliers aux communautés 
+          d’Agile Québec et d’Agile Montréal ainsi qu’aux participants des Agile Tours de Québec, 
+          Montréal et Sherbrooke.
+        `,
       },
     ],
   },
@@ -163,68 +399,130 @@ export const ConferencePm1: Conference[] = [
 
 export const ConferencePm2: Conference[] = [
   {
+    enable: true,
     time: Time.timePM2,
     room: Room.room1,
-    title: `Comprendre le niveau de maturité de votre organisation OU avoir des attentes réalistes pour votre implantation Agile.`,
-    resume: `De plus en plus d’entreprises veulent maintenant se transformer vers l’Agilité. On se questionnera sur ce que ça prend pour amorcer une transition en grande entreprise. On discutera des différents niveaux de maturité possible d’une entreprise qui initie une transformation. Nous nous questionnerons sur les attentes réalistes d’une transformation Agile en fonction du niveau de maturité des entreprises.`,
-    company: `Agile Partnership`,
+    title: `Ce que Scrum n’est pas`,
+    resume: `
+      Scrum est un cadre qui a fait ses preuves. Malheureusement, beaucoup de fausses croyances 
+      à propos de ce que Scrum implique et représente causent l’échec de nombreuses transformations 
+      agiles. Que ce soit pour vous outiller en vue de votre prochaine transformation ou pour 
+      diagnostiquer vos pratiques actuelles, cette conférence vous propose d’explorer plusieurs 
+      de ces croyances ainsi que des pistes de solution.
+    `,
+    company: `Coveo`,
     presenters: [
       {
-        name: `Stéphane Lecuyer`,
-        picture: `assets/stephane-lecuyer.png`,
-        bio: `Stéphane a coaché plusieurs équipes à travers des transformations organisationnelles Agile depuis plus de 10 ans. Il est un fin observateur de l’humain, des équipes et des comportements organisationnels. Il a coaché avec succès plusieurs équipes dans une variété d’environnements difficiles en mettant l’accent sur le côté humain des transformations Agile.<br><br>Formateur Scrum et coach expérimenté, il utilise la théorie et la pratique, appuyé par d’excellentes compétences de mentorat, pour soutenir efficacement les équipes et les cadres supérieurs. Stéphane est un Scrum master certifié ainsi qu’un praticien Scrum. Depuis 10 ans maintenant, il a formé plus de 350 Scrum Master / Product Owner`,
-      },
-      {
-        name: `Louis Morisset`,
-        picture: `assets/louis-morisset.png`,
-        bio: `Louis Morisset est un Coach Agile qui travaille dans le domaine des technologies de l’information depuis 1998. Rapidement, Louis a réalisé qu’il existait un écart entre les résultats de l’implantation de l’Agilité au niveau des équipes de livraison et les attentes des groupes de gestionnaires. Ceci l’a amené à se spécialiser en coaching Agile pour les gestionnaires de haut niveau. Étant certifié de la ‘Agile Coaching Institute’ comme Agile Coach Expert, il possède une expérience importante dans l’accompagnement de grandes entreprise dans l’adoption de l’agilité.`,
+        name: `Jean-Francois Morel`,
+        picture: `assets/speakers/jeanfrancois-morel.png`,
+        bio: `
+          Jean-François Morel, 43ième de Génie Informatique, Sherbrooke et MBA en affaires 
+          électroniques, Laval. Agiliste de vocation et fan fini de jeux de société (Individuals 
+          and interactions…), il a directement supervisé plus d'une dizaine d'équipes au cours 
+          des 12 dernières années et autant de transformations agiles dans des domaines aussi 
+          variés que le jeu vidéo, la dentisterie numérique et la recherche intelligente. 
+        `,
       },
     ],
   },
-   {
+  {
+    enable: true,
     time: Time.timePM2,
     room: Room.room2,
-    title: `Architecture express pour petits projets`,
-    resume: `Comment peut-on préparer un projet sans tomber dans les mécaniques lourdes de planification et d’architecture détaillées? Est-ce nécessaire dans un projet agile? Quels pourraient être les gains de mener une telle activité et comment pourrait-on la tenir?<br><br>Inspirée par Disciplined Agile, cette conférence propose une approche dynamique et énergisante permettant de cibler rapidement une vision de départ et d’en enclencher la réalisation. Collaboration, focus et un bon coffre à outils peuvent vous aider à démarrer votre projet du bon pied et vous éviter quelques pièges!`,
-    company: `Facilité`,
+    title: `Livrer de la valeur en production à chaque itération grâce à l’intégration et au déploiement en continu (CI/CD)`,
+    resume: `
+      L’intégration continue (CI) et le déploiement en continu (CD) sont souvent considérées comme 
+      des pratiques purement technologiques, ou liées à la mise en production. Pourtant, avec la 
+      gestion du code source et les principes itératifs, nous considérons que ce sont des piliers 
+      essentiels d’une pratique agile saine et efficace. Chez PMCtire.com, ces principes constituent 
+      le prisme principal à travers lequel nous nous appuyons pour livrer de la valeur en production 
+      à chaque itération, soit à chaque semaine.<br><br>
+
+      Venez entendre comment ces principes itératifs, l’intégration continue et le déploiement continus 
+      nous ont permis d’accélérer et de mieux contrôler ces boucles itératives et nos mises en 
+      production. Nous expliquerons comment Gitlab et ses outils de CI/CD (qui sont Open Source) 
+      nous aident à supporter notre pratique. À travers notre retour d’expérience, nous poserons 
+      un regard pragmatique et critique sur les pratiques Agile et Scrum. Intéressant peu importe 
+      l’outil que vous utilisez.
+    
+    `,
+    company: `PMC Tire`,
     presenters: [
       {
-        name: `Frédéric Paquet`,
-        picture: `assets/frederic-paquet.png`,
-        bio: `Avant de tomber dans le coaching agile, Frédéric a travaillé comme développeur, architecte, PCO, conseiller au Bureau de projets et chef de projets dans le privé et le parapublique.<br>Il a également cofondé une compagnie web dans le domaine de la psychométrie et le développement des compétences qu’il a dirigé pendant plus de 10 ans. Maintenant, il accompagne les organisations pour fluidifier et optimiser les modes d’opérations organisationnels à l’aide de son coffre à outils agile qu’il continue constamment d’améliorer.`,
+        name: `Benoit St-Andre`,
+        picture: `assets/speakers/benoit-st-andre.png`,
+        bio: `
+          Benoit est Vice-président Technologies / CTO chez PMCtire.com. Durant les 20 dernières années, 
+          Benoit a contribué à la vision technologique et l’implémentation de technologies Web à titre 
+          de gestionnaire de développement, de conseiller technologique et de consultant pour plusieurs 
+          organisations du monde de l’entreprise, du gouvernement et de l’éducation, particulièrement 
+          en lien avec les logiciels libres et Open Source. Il oeuvrait précédemment à titre d’intrapreneur 
+          à l’innovation au sein de Wolters Kluwer Canada où il dirigeait une équipe de développement de
+          produits innovants et a contribué à l’amélioration des processus agile pour les équipes de 
+          développement. 
+        `,
       },
-      {
-        name: `Eric Lessard`,
-        picture: `assets/eric-lessard.png`,
-        bio: `Éric Lessard est un coach et praticien agile depuis plus de 10 ans. Il a occupé un éventail de rôles différents dans les équipes agiles comme développeur, analyste, chef d’équipe, coordonnateur et coach.<br>Il préconise une approche pragmatique et concrète à l’agilité, visant la livraison de résultats par des équipes humaines et engagées.`,
-      }
     ],
   },
   {
+    enable: true,
     time: Time.timePM2,
     room: Room.room3,
-    title: `Gestionnaire : une profession en mutation`,
-    resume: `Le travail de gestionnaire a constamment changé, et ce, dès le début de l’ère industrielle. Pourtant, au cours des dernières années, le changement s’est fait plus rapide et plus drastique au point où le fameux PODC (planifier, organiser, diriger, contrôler) est maintenant chose du passé. On parle maintenant de savoir-être, de compétence relationnelle, d’équipe auto-organisée…<br><br>C’est l’émergence d’une nouvelle « espèce » de gestionnaire. Que s’est-il passé pour qu’on en arrive là? Est-ce le fruit d’une évolution darwinienne? S’agit-il d’une mode passagère ou d’une tendance lourde qui n’a pas fini d’évoluer? Cette conférence propose une vision de ce qui a amené les organisations à revoir le travail du gestionnaire du passé au présent nous survolerons un ensemble d’évènements qui ont changé radicalement l’environnement des organisations et nous tenterons de relever des indices nous révélant certaines surprises que semble nous réserver l’avenir.`,
-    company: `Conseiller à la fonction publique`,
+    title: `10 erreurs fréquentes à éviter pour un Product Owner`,
+    resume: `
+      Entre la théorie et la pratique du rôle du PO, nous allons partager notre expérience pratique de
+      coaching de PO à travers des exemples concrets du vécu des équipes Scrum en identifiant les
+      erreurs potentielles et proposer des pistes de solutions pour éviter ces erreurs.
+    `,
+    company: ``,
     presenters: [
       {
-        name: `Daniel Prince`,
-        picture: `assets/daniel-prince.png`,
-        bio: `Daniel Prince, CRHA est psychosociologue et détient une maîtrise en administration publique avec une majeure en gestion des ressources humaines. Il a travaillé pour plusieurs grandes organisations tant dans le domaine publique que privé, principalement en accompagnement de gestionnaires, en développement organisationnel et en développement du leadership ainsi qu’en gestion du changement. Il a notamment contribué au succès des implantations de systèmes RH tels qu’Oracle et SAP. Il est présentement à l’emploi d'une direction principale des services technologiques de la fonction publique en tant que Conseiller en changement (transformation) organisationnel`,
+        name: `Mohamed Arezki `,
+        picture: `assets/speakers/mohammed-arezki.png`,
+        bio: `
+          Mohamed est un coach en transformation Agile et Scrum Master senior depuis plus de 5 ans.  Il
+          accompagne actuellement les équipes de développement et de projets à  la banque nationale. Il
+          a plus de dix ans d’expérience dans la gestion des équipes de développement (Software,
+          Hardware et Contrôle de qualité). Il a participé à la mise en place de l’approche Agile/Scrum
+          chez Sherweb, CCH et BNC avec des équipes multidisciplinaires et auto-organisées. Il est certifié
+          CSM et PMI-ACP. Mohamed est un des fondateurs et membre actif de la Communauté Agile de
+          Sherbrooke. Il a obtenu sa maîtrise en informatique à l’université de Sherbrooke en 2001.
+        `,
       },
     ],
   },
   {
+    enable: true,
     time: Time.timePM2,
     room: Room.room4,
-    title: `CI & CD: Intégration Continue et Livraison Continue, de la théorie à la pratique`,
-    resume: `Dans mon expérience, j'ai étudié les principes de l'intégration continue (CI) et de la livraison continue (CD). J'ai eu la chance de pouvoir appliquer ces principes dans un monde réel et aujourd'hui il est possible de constater les bienfaits. Dans cette présentation, je démontre le fruit de ces efforts et comment nous y sommes arrivés.`,
-    company: `Nmédia`,
+    title: `Management 3.0 par la pratique`,
+    resume: `
+      Le management en entreprise est encore une question de hiérarchie, avec des donneurs 
+      d’ordres et des exécutants. La tendance amène votre organisation à prendre un virage 
+      agile, avec des équipes auto-organisées. Il ne s’agit plus uniquement d’un rapport 
+      hiérarchique entre salariés mais d’une collaboration basée sur la communication et 
+      l’échange. Mais comment mettre cette collaboration concrètement en pratique ?  Cet 
+      atelier vise à vous mettre en situation à travers quelques outils du management 3.0 
+      simples et faciles à mettre en place. Vous pourrez ainsi expérimenter les principes 
+      du Management 3.0 exposés par Jurgen Appelo et réfléchir à la mise en place de ces 
+      outils dans le contexte de votre organisation.
+    `,
+    company: `Levio`,
     presenters: [
       {
-        name: `Gabriel Blais-Bourget`,
-        picture: `assets/gabriel-blais-bourget.png`,
-        bio: `Avocat du « software craftmanship », Gabriel a développé un intérêt particulier envers l'intégration continue (CI) et la livraison continue (CD). Développeur depuis plus de 4 ans chez Sherweb, il a influencé un changement de mentalité envers le CI et CD. Aujourd’hui, il est possible de constater que ces concepts fonctionnent et aident grandement à l'organisation de l'équipe de développement.`,
+        name: `Jean-Marie Perrono`,
+        picture: `assets/speakers/jm-perrono.png`,
+        bio: `
+          Spécialisé en architecture des systèmes et en méthodologies de développement, notamment 
+          dans des contextes orientés objets, Jean-Marie Perrono a tout naturellement été conduit 
+          à se passionner dès 2003 pour les approches agiles comme Scrum, d'abord en tant que membre 
+          d'équipe, puis en tant que Scrum Master certifié et coach Agile.<br><br>
+          L'agilité est devenue sa seconde passion. Du développement piloté par les tests aux bonnes 
+          pratiques de transformation agile des organisations, il accompagne, il forme et conseille.<br><br>
+          Bon pédagogue, son expérience lui permet maintenant de situer ses interventions au niveau de la 
+          formation et de l'accompagnement des équipes dans leur transition vers l'agilité, ainsi que de la 
+          sensibilisation des organisations aux impacts induits par ces pratiques.
+        `,
       },
     ],
   },

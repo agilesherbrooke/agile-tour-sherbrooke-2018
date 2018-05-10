@@ -1,6 +1,6 @@
 export const Room = {
-  room1: 'Salle Principale',
-  room2: 'Salle Facilité',
-  room3: 'Salle Acceo',
-  room4: 'Salle Wolters Kluwer',
+  room1: 'Salle 1',
+  room2: 'Salle 2',
+  room3: 'Salle 3',
+  room4: 'Salle 4',
 }

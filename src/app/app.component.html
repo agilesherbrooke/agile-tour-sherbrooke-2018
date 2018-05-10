@@ -2,8 +2,8 @@
   <div class="container">
     <div class="header-title">
       <img src="assets/header-title.png">
-      <p>
-        <a class="btn btn-success uppercase" href="https://www.eventbrite.ca/e/billets-agile-tour-sherbrooke-2017-32558446189">Inscription</a>
+      <p *ngIf="variables.eventBriteLinkActive">
+        <a class="btn btn-success uppercase" href="{{ variables.eventBriteLink}}">Inscription</a>
       </p>
     </div>
   </div>
@@ -17,19 +17,30 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-4 col-lg-3 text-center">
-          <img class="keynote-picture" src="assets/uncle-bob.png">
+          <img class="keynote-picture" src="assets/speakers/xavier-boilard.png">
         </div>
         <div class="col-sm-12 col-md-8 col-lg-9">
-          <h1 class="keynote-title text-primary">Uncle Bob</h1>
-          <h3 class="keynote-subtitle text-accent uppercase">Clean Code</h3>
+          <h1 class="keynote-title text-primary">Xavier Boilard</h1>
+          <h3 class="keynote-subtitle text-accent uppercase">Omnimed</h3>
           <p class="keynote-text">
-            <a href="http://en.wikipedia.org/wiki/Robert_Cecil_Martin" target="_blank" title="Page Wikipedia de Robert C. Martin">Robert C. Martin</a>, aussi connu sous le nom de Uncle Bob, est reconnu comme une sommité internationale du développement logiciel. Il est l'un des signataires initiaux du manifeste Agile et demeure l'une des <a href="http://www.infoq.com/news/2012/04/agile-influential-people" target="_blank">personnalités les plus influente du mouvent Agile</a> et de l'industrie du développement logiciel. Il             est un ardent promoteur des meilleures pratiques de développement logiciel et du professionnalisme.<br>
-            <br>
-            Il est reconnu pour sa capacité à vulgariser et à promouvoir les principes, les modèles de conception et les techniques de programmation garantes de succès. Ses formations permettent aux participants d’apprendre par la théorie, des études de cas et des exercices pratiques comment mettre en oeuvre les bonnes pratiques de développement logiciel. C'est aussi un mordu des sciences et il adore discuter de sujets aussi variés que la vitesse de la lumière ou les sources d'énergies de l'avenir.<br>
-            <br>
-            Son livre <a href="http://www.amazon.ca/Software-Development-Principles-Patterns-Practices/dp/0135974445">Agile Software Development, Principles, Patterns, and Practices</a>    demeure un des meilleurs vendeurs parmi les livres en développement logiciel, 10 ans après son lancement. <a href="http://www.pearsonhighered.com/educator/product/Clean-Code-A-Handbook-of-Agile-Software-Craftsmanship/9780132350884.page" target="_blank">Clean Code</a> est reconnu comme un incontournable en développement logiciel et son plus récent ouvrage, <a href="http://www.pearsonhighered.com/educator/product/Clean-Coder-The-A-Code-of-Conduct-for-Professional-Programmers/9780137081073.page">Clean Coder : A Code of Conduct for Professional Programmers</a>, a quant à lui reçu de nombreuses critiques élogieuses depuis sa parution.<br>
-            <br>
-            Son désir de partager ses connaissances et de promouvoir les meilleures façons de faire l'a ammené à lancer son propre site d'apprentissage en ligne, <a href="http://cleancoders.com/" target="_blank">Clean Coders</a>. Il a publié une vingtaine d'épisodes sur des sujets tels que les patrons de conception, les principes solides et le développement piloté par les tests.
+              Pour cette seconde édition, nous avons le plaisir d'accueillir Xavier Boilard, 
+              président-directeur général de l’entreprise Omnimed, une entreprise inspirante de la 
+              région de l’Estrie.<br><br>
+              Fondée par le Dr Jean Boilard en 1984, la compagnie se nomme alors Caduceus et est 
+              spécialisée dans le développement et la commercialisation d’outils de gestion pour les 
+              cliniques médicales. <br><br>
+              Convaincu que le besoin en outils de gestion est beaucoup plus grand que ce qu’offre Caduceus, 
+              il fonde alors Omnimed, en 1998. <br><br> 
+              « Mon père disait que lorsqu'il avait commencé à pratiquer, la médecine était une science, 
+              et que c'était devenu un art; celui de deviner ce que tu ne sais pas, car le patient ne 
+              donne jamais toute l'information et le médecin a très rarement accès à toutes ses 
+              consultations précédentes. À la fin de la journée, il était hanté par le doute, l'idée 
+              qu'il avait pu se tromper et faire la mauvaise déduction. C'est pour réduire ce doute 
+              qu'il a imaginé un dossier électronique partagé. » - Xavier Boilard, PDG d'Omnimed et 
+              fils de Dr Boilard <br><br>
+              Depuis ses débuts, l’entreprise est l’une des pionnières sur le marché émergent de 
+              l’informatique médicale au Québec et est devenue au fil des années leader en matière 
+              de développement logiciel.
           </p>
         </div>
       </div>
@@ -46,10 +57,11 @@
             <h1 class="title text-accent">
               <i class="material-icons icon-margin">today</i>Événement
             </h1>
-            <h3 class="text-primary bolder uppercase">Vendredi 19 mai 2017</h3>
-            <h5 class="text-secondary bold uppercase">De 9h @ 16h</h5>
+            <h3 class="text-primary bolder uppercase">{{variables.eventDate}}</h3>
+            <h5 class="text-secondary bold uppercase">{{variables.eventHours}}</h5>
             <p>
-              Le Agile Tour Sherbrooke est un événement annuel offrant l'opportunité d'assister a plusieurs conférences autour du sujet de la méthodologie Agile dans le domaine des TI. Pour notre première édition, vous aurez également la chance d'assister à la conférence donné en anglais par le réputé conférencier Robert C. Martin, mieux connu sous le pseudonyme de "Uncle Bob".
+              Le Agile Tour Sherbrooke est un événement annuel offrant l'opportunité d'assister 
+              a plusieurs conférences autour du sujet de la méthodologie Agile dans le domaine des TI.
             </p>
           </div>
 
@@ -61,7 +73,7 @@
               Le programme de la journée vous offre l'opportunité de participer à:
             </p>
             <ul>
-              <li>1 présentation principale de 90 minutes (Robert Martin)</li>
+              <li>1 présentation principale de 90 minutes</li>
               <li>3 conférences de 60 à 75 minutes, parmi un choix de 12 conférences et ateliers au programme</li>
             </ul>
             <p>
@@ -87,9 +99,12 @@
                   <tr>
                     <td>{{ conferenceKeynote.time }}</td>
                     <td class="keynote clickable" colspan="4" (click)="openModal(conferenceKeynote)">
-                      <div class="title">{{ conferenceKeynote.title }}</div>
-                      <div class="presenter">{{ concatPresenters(conferenceKeynote.presenters) }}</div>
-                      <div class="company">{{ conferenceKeynote.company }}</div>
+                      <div *ngIf="conferenceKeynote.enable">
+                        <div class="title">{{ conferenceKeynote.title }}</div>
+                        <div class="presenter">{{ concatPresenters(conferenceKeynote.presenters) }}</div>
+                        <div class="company">{{ conferenceKeynote.company }}</div>
+                      </div>
+                      <div *ngIf="!conferenceKeynote.enable" class="title" style="color: #888;"><em>À venir</em></div>
                     </td>
                   </tr>
                   <tr>
@@ -99,9 +114,12 @@
                   <tr>
                     <td>{{ conferenceAm1[0].time }}</td>
                     <td class="clickable" *ngFor="let conference of conferenceAm1" (click)="openModal(conference)">
-                      <div class="title">{{ conference.title }}</div>
-                      <div class="presenter">{{ concatPresenters(conference.presenters) }}</div>
-                      <div class="company">{{ conference.company }}</div>
+                      <div *ngIf="conference.enable">
+                        <div  class="title">{{ conference.title }}</div>
+                        <div class="presenter">{{ concatPresenters(conference.presenters) }}</div>
+                        <div class="company">{{ conference.company }}</div>
+                      </div>
+                      <div *ngIf="!conference.enable" class="title" style="color: #888;"><em>À venir</em></div>
                     </td>
                   </tr>
                   <tr>
@@ -111,9 +129,12 @@
                   <tr>
                     <td>{{ conferencePm1[0].time }}</td>
                     <td class="clickable" *ngFor="let conference of conferencePm1" (click)="openModal(conference)">
-                      <div class="title">{{ conference.title }}</div>
-                      <div class="presenter">{{ concatPresenters(conference.presenters) }}</div>
-                      <div class="company">{{ conference.company }}</div>
+                      <div *ngIf="conference.enable">
+                        <div class="title">{{ conference.title }}</div>
+                        <div class="presenter">{{ concatPresenters(conference.presenters) }}</div>
+                        <div class="company">{{ conference.company }}</div>
+                      </div>
+                      <div *ngIf="!conference.enable" class="title" style="color: #888;"><em>À venir</em></div>
                     </td>
                   </tr>
                   <tr>
@@ -123,9 +144,12 @@
                   <tr>
                     <td>{{ conferencePm2[0].time }}</td>
                     <td class="clickable" *ngFor="let conference of conferencePm2" (click)="openModal(conference)">
-                      <div class="title">{{ conference.title }}</div>
-                      <div class="presenter">{{ concatPresenters(conference.presenters) }}</div>
-                      <div class="company">{{ conference.company }}</div>
+                      <div *ngIf="conference.enable">
+                        <div class="title">{{ conference.title }}</div>
+                        <div class="presenter">{{ concatPresenters(conference.presenters) }}</div>
+                        <div class="company">{{ conference.company }}</div>
+                      </div>
+                      <div *ngIf="!conference.enable" class="title" style="color: #888;"><em>À venir</em></div>
                     </td>
                   </tr>
                   <tr>
@@ -145,32 +169,36 @@
           <h1 class="title text-accent">
             <i class="material-icons icon-margin">location_on</i>Emplacement
           </h1>
-          <h3 class="text-primary bolder uppercase">Centre de Foires de Sherbrooke</h3>
-          <a class="text" href="https://www.google.ca/maps/dir//1600+Boulevard+du+Plateau-Saint-Joseph,+Sherbrooke,+QC+J1L+3C6" target="_blank">
-              1600, boulevard du Plateau St-Joseph<br>
-              Sherbrooke (Québec) J1L 0C8
+          <h3 class="text-primary bolder uppercase">Université de Sherbrooke</h3>
+          <div>
+          <a class="text" href="https://www.google.ca/maps/place/Facult%C3%A9+de+G%C3%A9nie/@45.3675646,-71.9772254,14z/data=!4m5!3m4!1s0x0:0xb57db3c0731d863d!8m2!3d45.3783419!4d-71.9256972" target="_blank">
+              Falcuté de Génie<br>
+              2500, boul. de l'Université<br>
+              Sherbrooke (Québec) J1K 2R1              
           </a>
+          </div>
+          <h5 class="include" style="font-weight:bold;">L'accueil se fera à la cafétéria du pavillon</h5>
         </div>
 
         <div class="col-sm-12 col-md-4">
           <h1 class="title text-accent">
             <i class="material-icons">attach_money</i>Admission
           </h1>
-          <h3 class="text-primary bolder uppercase">80$ / personne</h3>
+          <h3 class="text-primary bolder uppercase">{{ variables.eventPrice}}</h3>
+          <h4>Spécial Étudiant : 25$</h4>
           
-          <h5 class="include"><b>Inclus</b><em class="text-secondary">*</em></h5>
+
+          <h5 class="include"><b>Inclus</b></h5>
           <ul>
-            <li>Laissez-passer pour la journée</li>
-            <li>Conférence du Keynote (anglais)</li>
-            <li>Collation et café</li>
-            <li>Stationnement</li>
+              <li>Laissez-passer pour la journée</li>
+              <li>Dîner</li>
+              <li>Collation et café</li>
+              <li>Stationnement</li>
           </ul>
-
-          <p class="summary-exclude text-secondary italic">
-            <em>*</em> Le coût du dîner est exclus. Le traiteur Le Poivron Rouge sera sur place pour l'événement pour offrir à vos frais un choix de 3 boîtes à lunch.
+          <br>
+          <p *ngIf="variables.eventBriteLinkActive">
+            <a class="btn btn-success uppercase" href="{{ variables.eventBriteLink}}">Inscription</a>
           </p>
-
-          <p><a class="btn btn-success uppercase" href="https://www.eventbrite.ca/e/billets-agile-tour-sherbrooke-2017-32558446189">Inscription</a></p>
         </div>
       </div>
     </div>
@@ -180,31 +208,46 @@
   <div class="partners text-center">
     <img class="partners-header" src="assets/partners-header.png">
     <div class="container">
-      <h1 class="partners-title">Partenaires</h1>
+
+      <h1 class="partners-title">Partenaires Platine</h1>
       <hr class="partner-divider">
       <div class="row">
         <div class="col-sm-12">
           <a href="http://pyxis-tech.com/fr/" target="_blank">
-            <img class="partners-pyxis" src="assets/pyxis-white-logo.png">
+            <img class="partners-pyxis" src="assets/partners/pyxis-white-logo.png">
           </a>
         </div>
         <div class="col-sm-12">
-          <a href="https://www.genetec.com/fr" target="_blank">
-            <img class="partners-genetec" src="assets/genetec-white-logo.png">
+          <a href="https://sherbrooke-innopole.com/fr/" target="_blank">
+            <img class="partners-innopole" src="assets/partners/sherbrooke-innopole-white-logo.png">
+          </a>
+        </div>
+        <div>&nbsp;<br><br></div>
+        <h1 class="partners-title">Partenaires Or</h1>
+        <hr class="partner-divider">
+        <div class="col-sm-12">
+          <a href="https://www.facilite.com/" target="_blank">
+            <img class="partners-genetec" src="assets/partners/facilite-white-logo.png">
           </a>
         </div>
         <div class="col-sm-12">
-          <a href="http://sherbrooke-innopole.com/fr" target="_blank">
-            <img class="partners-innopole" src="assets/sherbrooke-innopole-white-logo.png">
+          <a href="https://www.genetec.com/" target="_blank">
+            <img class="partners-genetec" src="assets/partners/genetec-white-logo.png">
+          </a>
+        </div>
+
+        <div class="col-sm-12">
+          <a href="https://www.levio.ca/" target="_blank">
+            <img class="partners-levio" src="assets/partners/levio-white-logo.png">
           </a>
         </div>
       </div>
-      <hr class="partner-divider">
-      <div class="row">
-        <div class="col-sm-12 col-md-6"><img class="partners-acceo" src="assets/acceo-white-logo.png"></div>
-        <div class="col-sm-12 col-md-6"><img class="partners-facilite" src="assets/facilite-white-logo.png"></div>
-        <div class="col-sm-12"><img class="partners-wolters-kluwer" src="assets/wolters-kluwer-white-logo.png"></div>
+      <div class="col-sm-12">
+        <a href="http://usherbrooke.ca" target="_blank">
+          <img class="partners-udes" src="assets/partners/udes-white-logo.png">
+        </a>
       </div>
+
     </div>
   </div>
 </main>

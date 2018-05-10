@@ -4,9 +4,11 @@ import { Modal } from 'angular2-modal/plugins/bootstrap';
 
 import { ConferenceKeynote, ConferenceAm1, ConferencePm1, ConferencePm2 } from './consts/conference';
 import { Room } from './consts/room';
+import { Variables } from './consts/variables';
 import { Conference, Presenter } from './models';
 
 interface IConference {
+  enable: boolean,
   title: string,
   presenter: string,
   company: string,
@@ -27,6 +29,7 @@ export class AppComponent implements AfterViewInit {
   conferencePm1: Conference[];
   conferencePm2: Conference[];
   room: any;
+  variables: any;
 
   constructor(
     overlay: Overlay,
@@ -41,6 +44,7 @@ export class AppComponent implements AfterViewInit {
     this.conferencePm1 = ConferencePm1;
     this.conferencePm2 = ConferencePm2;
     this.room = Room;
+    this.variables = Variables;
   }
 
   ngAfterViewInit() {
@@ -52,6 +56,9 @@ export class AppComponent implements AfterViewInit {
   }
 
   openModal(conference: Conference) {
+    if (!conference.enable) {
+      return;
+    }
     this.modal.alert()
       .size('lg')
       .showClose(true)
@@ -71,13 +78,13 @@ export class AppComponent implements AfterViewInit {
         <div class="conference-content text-center">
           <h3 class="conference-presenter text-primary">${this.concatPresenters(conference.presenters)}</h3>
           <h4 class="conference-resume text-primary bold">Résumé de la conférence</h4>
-          <p class="conference-text">${conference.resume}</p>` +
+          <p class="conference-text">${conference.resume || 'À venir'}</p>` +
           conference.presenters.reduce((bio, presenter) => {
             return bio.concat(`
               <h4 class="conference-bio text-primary bold">
                 Biographie - ${presenter.name}
               </h4>
-              <p class="conference-text">${presenter.bio}</p>`);
+              <p class="conference-text">${presenter.bio || 'A venir'}</p>`);
           }, '') + `
         </div>`)
       .open();
