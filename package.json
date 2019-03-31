@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:gh-pages": "ng build --prod --base-href \"https://jfcere.github.io/agile-tour-sherbrooke/\" && cpx src/CNAME dist",
+    "build:gh-pages": "ng build --env=prod --base-href \"https://agilesherbrooke.github.io/agile-tour-sherbrooke-2018/\"",
     "publish:gh-pages": "angular-cli-ghpages --message \"Publish gh-pages\""
   },
   "private": false,
